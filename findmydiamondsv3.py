@@ -85,7 +85,7 @@ import gym
 import minerl
 
 # Load the trained model
-model = BCModel(input_size=your_input_size, output_size=your_output_size)
+model = BCModel(input_size=(64 * 64 * 3), output_size=2)
 model.load_state_dict(torch.load('bc_model.pth'))
 model.eval()
 
@@ -95,7 +95,7 @@ done = False
 
 while not done:
     # Preprocess observation
-    obs_input = preprocess_observation(obs)  # Define this function based on your preprocessing
+    obs_input = preprocess_observation(obs)
     with torch.no_grad():
         action_pred = model(obs_input)
     # Convert model output to action dictionary
