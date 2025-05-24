@@ -1,0 +1,23 @@
+[20:19:51] [Thread-3/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[20:19:51] [EnvServerSocketHandler/INFO]: Received Mission token d39b7394-f376-4901-a38f-6e850d90df47:0:0:1:true
+[20:19:51] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLObtainDiamondShovel-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>true</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><ObservationFromFullInventory flat="false"/><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>d39b7394-f376-4901-a38f-6e850d90df47</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000136f0d260, pid=14794, tid=0x000000000000a157
+#
+# JRE version: OpenJDK Runtime Environment (8.0_452-b09) (build 1.8.0_452-b09)
+# Java VM: OpenJDK 64-Bit Server VM (25.452-b09 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# C  [liblwjgl_stb.dylib+0x59260]
+[error occurred during error reporting (printing problematic frame), id 0xe0000000]
+
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /Users/christon/.pyenv/versions/3.8.18/lib/python3.8/site-packages/minerl/MCP-Reborn/hs_err_pid14794.log
+[20:19:52] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[20:19:52] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[20:19:52] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[20:19:52] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+/Users/christon/.pyenv/versions/3.8.18/lib/python3.8/site-packages/minerl/env/../MCP-Reborn/launchClient.sh: line 52: 14794 Abort trap: 6           java -Xmx$maxMem -XstartOnFirstThread -jar $fatjar --envPort=$port

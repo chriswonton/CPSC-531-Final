@@ -1,0 +1,8 @@
+2025-05-23 20:23:06 Christians-MacBook-Pro-85.local process_watcher[16083] INFO Process watcher started between parent 16038 and child 16076 
+2025-05-23 20:23:47 Christians-MacBook-Pro-85.local process_watcher[16083] INFO Parent is not running, hence we need terminate the child.
+2025-05-23 20:23:47 Christians-MacBook-Pro-85.local process_watcher[16083] INFO About to reap process tree of 16076:bash:/bin/bash i running, owner 1, printing process tree status in termination order:
+2025-05-23 20:23:47 Christians-MacBook-Pro-85.local process_watcher[16083] INFO 	-16080:java:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/bin/java i running, owner 16076
+2025-05-23 20:23:47 Christians-MacBook-Pro-85.local process_watcher[16083] INFO 	-16076:bash:/bin/bash i running, owner 1
+2025-05-23 20:23:47 Christians-MacBook-Pro-85.local process_watcher[16083] INFO Trying to SIGTERM 16080:java:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/bin/java i running, owner 16076
+2025-05-23 20:23:48 Christians-MacBook-Pro-85.local process_watcher[16083] INFO Process psutil.Process(pid=16080, name='java', status='terminated', started='20:23:05') terminated with exit code None
+2025-05-23 20:23:48 Christians-MacBook-Pro-85.local process_watcher[16083] INFO Process psutil.Process(pid=16076, name='bash', status='terminated', started='20:23:05') does not exist or is zombie.

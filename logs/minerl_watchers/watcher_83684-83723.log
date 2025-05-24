@@ -1,0 +1,2 @@
+2025-05-23 18:34:48 Christians-MacBook-Pro-85.local process_watcher[83730] INFO Process watcher started between parent 83684 and child 83723 
+2025-05-23 18:38:26 Christians-MacBook-Pro-85.local process_watcher[83730] INFO Parent is not running, hence we need terminate the child.
